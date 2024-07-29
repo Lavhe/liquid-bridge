@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table style="width: 90vw; display: flex; justify-content: center">
+      <tr>
+        <td width="99%">
+          <h1 style="text-align: center">
+            BRIDGING FINANCE SETTLEMENT STATEMENT
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td width="99%">
+          <h3>
+            This statement also serves as an official Invoice of this
+            transaction
+          </h3>
+        </td>
+      </tr>
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 800; font-size: 20px">
+            INVOICE NUMBER: <u>{{invoiceNumber}}</u>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 400"> Date: {{date}} </span>
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 400"> Client Name: {{clientName}} </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="99%" style="display: flex">
+          <span style="font-weight: 400; padding-right: 20px">
+            Sold Property details:
+          </span>
+          <table>
+            <tr>
+              <td>ERF: {{erf}}</td>
+              <td>Portion: {{portion}}</td>
+            </tr>
+
+            <tr>
+              <td>Stand: {{stand}}</td>
+              <td>Extension: {{extension}}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 800">
+            Amount due to Liquid Bridge: R{{amountDueToLiquidBridge}}
+          </span>
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 400"> Conveyancer:: {{conveyancer}} </span>
+        </td>
+      </tr>
+      <tr>
+        <td width="99%">
+          <span style="font-weight: 400"> File number: {{id}} </span>
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td>
+          <table style="border-collapse: collapse">
+            <thead>
+              <td
+                style="
+                  border-left: 1px solid black;
+                  border-top: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                "
+                width="25%"
+              >
+                DATE
+              </td>
+              <td
+                style="
+                  border-top: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                "
+                width="50%"
+              >
+                DESCRIPTION
+              </td>
+              <td
+                style="
+                  border-top: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                "
+                width="25%"
+              >
+                AMOUNT
+              </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                  "
+                >
+                  032/saf
+                </td>
+                <td style="border-right: 1px solid black">032/saf</td>
+                <td style="border-right: 1px solid black">032/saf</td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                  "
+                >
+                  032/saf
+                </td>
+                <td style="border-right: 1px solid black">032/saf</td>
+                <td style="border-right: 1px solid black">032/saf</td>
+              </tr>
+              <tr height="40px">
+                <td
+                  style="
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                  "
+                />
+                <td style="border-right: 1px solid black" />
+                <td style="border-right: 1px solid black" />
+              </tr>
+              <tr>
+                <td
+                  style="
+                    border-left: 1px solid black;
+                    border-top: 1px solid black;
+                    border-right: 1px solid black;
+                    border-bottom: 1px solid black;
+                  "
+                  width="25%"
+                />
+                <td
+                  style="
+                    border-top: 1px solid black;
+                    border-right: 1px solid black;
+                    border-bottom: 1px solid black;
+                  "
+                  width="50%"
+                >
+                  Total <em>(due to Liquid Bridge)</em>
+                </td>
+                <td
+                  style="
+                    border-top: 1px solid black;
+                    border-right: 1px solid black;
+                    border-bottom: 1px solid black;
+                  "
+                  width="25%"
+                >
+                  R{{amountDueToLiquidBridge}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td>
+          The Conveyancer shall pay the total of R{{amountDueToLiquidBridge}} to
+          Liquid Bridge and the remaining balance to the Client in line with the
+          terms and conditions.
+        </td>
+      </tr>
+      <tr height="40px" />
+      <tr>
+        <td style="font-weight: 800">
+          IMPORTANT:
+          <ol>
+            <li>
+              This settlement statement is valid for this day only until 23:59.
+            </li>
+            <li>
+              Should you wish to pay after the statement has expired, kindly a
+              request new statement to avoid paying us less than what’s due to
+              us.
+            </li>
+            <li>
+              We will send you a confirmation of closure once we are satisfied
+              that everything is in order, only then may you pay the remaining
+              balance to the seller as our nominated beneficiary.
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="font-weight: 800">Payment Reference: {{invoiceNumber}}</td>
+      </tr>
+      <tr height="30px" />
+      <tr>
+        <td style="font-weight: 400">
+          Kindly send proof of payment along with this statement to:
+          <a href="mailto:settlement@liquidbridge.co.za"
+            >settlement@liquidbridge.co.za</a
+          >
+        </td>
+      </tr>
+      <tr height="30px" />
+      <tr>
+        <td style="font-weight: 400">
+          Kindly contact us on the following email address:
+          <a href="mailto:settlement@liquidbridge.co.za"
+            >settlement@liquidbridge.co.za</a
+          >
+          or speak directly with your Relationship manager or Support Officer if
+          there's any queries regarding this statement
+        </td>
+      </tr>
+      <tr height="30px" />
+      <tr>
+        <td style="font-weight: 400">
+          Liquid Bridge Fund (Reg. 2021/359597/07) | Address: _____ | Email:
+          <a href="mailto: info@liquidbridge.co.za">info@liquidbridge.co.za</a>
+          | BBBEE Level 1
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

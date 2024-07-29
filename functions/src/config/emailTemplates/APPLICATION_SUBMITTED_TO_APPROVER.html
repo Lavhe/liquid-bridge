@@ -1,0 +1,83 @@
+<table cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding: 30px">
+      <p style="color: #002a52; font-weight: 500">Hi</p>
+      <br />
+      <p>
+        <strong>Congratulations!</strong> The attached Bridging Finance
+        Application submitted by
+        <strong>{{ submitter.displayName }}</strong> has been approved.
+      </p>
+      <br />
+      <p>
+        As the selected approver (Director/Partner/Principal), kindly peruse
+        through the attached documents before confirming the finance from us.
+        <br />
+      </p>
+
+      <p>By clicking <strong>"ACCEPT"</strong>, you confirm that:</p>
+      <br />
+      <p>
+        1. You are duly authorized by your client (finance applicant) to accept
+        this finance on behalf of your client
+      </p>
+      <p>
+        2. All the information provided on the application form and pro forma
+        statement is true and accurate
+      </p>
+      <p>
+        3. You, on behalf of your client accept our pricing shown on the
+        attached Quote.
+      </p>
+      <p>
+        4. You have read, understand and accept our Terms and Conditions for
+        this Bridging Finance Application.
+      </p>
+      <p>
+        5. We will deposit the funds due to your client into the selected
+        Attorney's Trust Account (<strong>{{ attorneyTrustAccount }}</strong>)
+      </p>
+      <br />
+      <br />
+      <p>If you click <strong>"DECLINE"</strong>, we will:</p>
+      <br />
+      <p>
+        1. Cancel this application and not deposit the funds for it into your
+        Attorney's Trust Account (<strong>{{ attorneyTrustAccount }}</strong>)
+      </p>
+      <p>2. Ask you to provide the reason for cancelling the application.</p>
+      <br />
+      <br />
+      <h3>
+        To perform an action please visit the dashboard using the button below
+      </h3>
+      <br />
+      <a
+        href="{{BASE_URL}}/applications/new?applicationId={{id}}"
+        style="
+          background-color: #00aaab;
+          color: white;
+          align-self: center;
+          width: 50%;
+          padding: 10px;
+          margin: 40px;
+          border-radius: 20px;
+          text-decoration: none;
+        "
+        >Go To Dashboard</a
+      >
+      <br />
+      <br />
+      <p>Your reference for this application is: <strong style="color: #002a52; font-weight: 600;">{{ id }}<strong></p>
+        <br />
+        <br />
+        <span style="color: #002a52; font-style: italic; font-weight: 400">
+        Kind Regards,
+      </span>
+      <br />
+      <span style="color: #00aaab; font-weight: 400"
+        >Liquid Bridge Fund Team</span
+      >
+    </td>
+  </tr>
+</table>

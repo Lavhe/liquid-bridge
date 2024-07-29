@@ -1,0 +1,42 @@
+{
+  "name": "web-portal",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "npm run build && firebase deploy --only=hosting",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.0.96",
+    "@mdi/react": "^1.6.1",
+    "classnames": "^2.3.1",
+    "firebase": "^9.9.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "sweetalert2": "^11.4.29",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@types/react": "^18.0.15",
+    "@types/react-datepicker": "^4.8.0",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "autoprefixer": "^10.4.7",
+    "c8": "^7.12.0",
+    "jsdom": "^20.0.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "typescript": "^4.9.5",
+    "vite": "^3.0.0",
+    "vitest": "^0.18.1"
+  }
+}

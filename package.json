@@ -1,0 +1,23 @@
+{
+  "name": "liquid-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMRSquared/liquid-bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMRSquared/liquid-bridge/issues"
+  },
+  "homepage": "https://github.com/JMRSquared/liquid-bridge#readme",
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
+}

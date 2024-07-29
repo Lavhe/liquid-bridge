@@ -1,0 +1,26 @@
+{
+  "firestore": {
+    "rules": "./web-portal/firestore.rules",
+    "indexes": "./web-portal/firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "./web-portal/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "predeploy": [
+      "cd functions && yarn build"
+    ]
+  }
+}
